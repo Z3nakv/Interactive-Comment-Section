@@ -11,7 +11,7 @@ const GlobalState = ({ children }) => {
 
     const fetchCommentsData = async () => {
         try {
-            const response = await fetch('/src/data.json')
+            const response = await fetch('../../data.json')
             const data = await response.json();
             if(data.comments.length){
                 setGlobalData(data)
